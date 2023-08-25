@@ -10,7 +10,7 @@ const Register = () => {
     const displayName = console.log(e.target[0].value)
     const email = console.log(e.target[1].value)
     const password = console.log(e.target[2].value)
-    // const file = console.log(e.target[3].files[0])
+    const file = console.log(e.target[3].files[0])
    
 
    const res = await createUserWithEmailAndPassword(auth,email,password)
@@ -33,11 +33,11 @@ const Register = () => {
           <input type='text' placeholder='display name' />
           <input type='email' placeholder='email' />
           <input  type='password' placeholder='password' />
-          {/* <input style={{ display: "none" }} type="file" id="file" />
+          <input style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" /> 
             <span>Add an avatar</span>
-          </label> */}
+          </label>
           <button >Sign up</button>
         </form>
         <p>
